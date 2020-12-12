@@ -62,6 +62,7 @@ public class Liga {
 	 *  al acabar para que no vuelva a salir el equipo
 	 */
 	public void mostrarOrdeadaPorPuntos() {
+		System.out.println("La tabla de clasificación: ");
 		String leftAlignFormat = "| %-15s | %-4d |%n";
 		System.out.format("+-----------------+------+%n");
 		System.out.format("| Equipo          |PTS   |%n");
@@ -131,6 +132,7 @@ public class Liga {
 	 * a recorrer hasta que i sea 5, para mostrar los 5 pichichis.
 	 */
 	public void mostrar5Goleadores() {
+		System.out.println("El Top 5 Pichichis: ");
 		String leftAlignFormat = "| %-16s | %-3d |%n";
 		System.out.format("+-----------------+-------+%n");
 		System.out.format("| Jugador          |Goles |%n");
@@ -166,6 +168,7 @@ public class Liga {
 	 * tener 5 jugadores con sus respectivas tarjetas
 	 */
 	public void mostrar5Expulsiones() {
+		System.out.println("El Top 5 carniceros: ");
 		String leftAlignFormat = "| %-15s | %-4d |%n";
 		System.out.format("+-----------------+------+%n");
 		System.out.format("| Equipo          |Rojas |%n");
@@ -203,6 +206,7 @@ public class Liga {
 	 * golesMaximos).
 	 */
 	public void mostrar3EquiposGoleadores() {
+		System.out.println("Top 3 equipos goleadores: ");
 		Equipo[] equiposOrdenados = new Equipo[clasificacion.length];
 		int mayorGoles = clasificacion[0].getGolesAFavor() - 1;
 		int golesMaximos = clasificacion[0].getGolesAFavor() + 1;
