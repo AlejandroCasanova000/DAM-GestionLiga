@@ -133,7 +133,7 @@ public class Liga {
 	public void mostrar5Goleadores() {
 		String leftAlignFormat = "| %-16s | %-3d |%n";
 		System.out.format("+-----------------+-------+%n");
-		System.out.format("| Equipo          |Jugador|%n");
+		System.out.format("| Jugador          |Goles |%n");
 		System.out.format("+-----------------+-------+%n");
 		Jugador[] jugadores = new Jugador[this.jugadoresLiga().length];
 		jugadores = this.jugadoresLiga();

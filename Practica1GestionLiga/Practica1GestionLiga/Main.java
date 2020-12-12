@@ -7,14 +7,14 @@ public class Main {
 		Scanner entrada = new Scanner(System.in);
 		
 		//Creaamos RealMadrid (Equipo 1) 57
-		Jugador jugador1 = new Jugador("Eden Hazard" , 7 , 10 , 2 , 3);
+		Jugador jugador1 = new Jugador("Eden Hazard" , 7 , 40 , 2 , 3);
 		Jugador jugador2 = new Jugador("Karim Benzema" , 9 , 25 , 2 , 4);
 		Jugador jugador3 = new Jugador("Courtois" , 1 , 75 , 0 , 1);
 		Jugador jugador4 = new Jugador("Daniel Carvajal" , 2 , 0 , 0 , 3);
 		Jugador jugador5 = new Jugador("Marcelo" , 12 , 0 , 3 , 5);
 		Jugador jugador6 = new Jugador("Raphael Varane" , 5 , 20 , 2 , 3);
 		Jugador jugador7 = new Jugador("Casemiro" , 14 , 2 , 3 , 4);
-		Jugador jugador8 = new Jugador("Sergio Ramos" , 4 , 74 , 0 , 2);
+		Jugador jugador8 = new Jugador("Sergio Ramos" , 4 , 69 , 0 , 2);
 		Jugador jugador9 = new Jugador("Luka Modric" , 10 , 5 , 0 , 3);
 		Jugador jugador10 = new Jugador("Ferland Mendy" , 23 , 0 , 2 , 3);
 		Jugador jugador11 = new Jugador("Isco" , 22 , 3 , 0 , 3);
