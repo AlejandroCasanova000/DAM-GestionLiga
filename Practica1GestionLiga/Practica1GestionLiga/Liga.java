@@ -202,12 +202,12 @@ public class Liga {
 	 * getGolesAFavor ha de ser menor que el de la iteración anterior (variable 
 	 * golesMaximos).
 	 */
-	public void mostrar5EquiposGoleadores() {
+	public void mostrar3EquiposGoleadores() {
 		Equipo[] equiposOrdenados = new Equipo[clasificacion.length];
 		int mayorGoles = clasificacion[0].getGolesAFavor() - 1;
 		int golesMaximos = clasificacion[0].getGolesAFavor() + 1;
 		int indexGoleador = 0;
-		for (int i = 0; i < clasificacion.length; i++) {
+		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < clasificacion.length; j++) {
 				if (i == 0) {
 					if (clasificacion[j].getGolesAFavor() > mayorGoles) {
