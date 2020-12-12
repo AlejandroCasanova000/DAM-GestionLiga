@@ -14,7 +14,7 @@ public class Main {
 		Jugador jugador5 = new Jugador("Marcelo" , 12 , 0 , 3 , 5);
 		Jugador jugador6 = new Jugador("Raphael Varane" , 5 , 20 , 2 , 3);
 		Jugador jugador7 = new Jugador("Casemiro" , 14 , 2 , 3 , 4);
-		Jugador jugador8 = new Jugador("Sergio Ramos" , 4 , 69 , 0 , 2);
+		Jugador jugador8 = new Jugador("Sergio Ramos" , 4 , 74 , 0 , 2);
 		Jugador jugador9 = new Jugador("Luka Modric" , 10 , 5 , 0 , 3);
 		Jugador jugador10 = new Jugador("Ferland Mendy" , 23 , 0 , 2 , 3);
 		Jugador jugador11 = new Jugador("Isco" , 22 , 3 , 0 , 3);
