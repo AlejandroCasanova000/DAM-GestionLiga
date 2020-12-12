@@ -8,7 +8,7 @@ public class Main {
 		
 		//Creaamos RealMadrid (Equipo 1) 57
 		Jugador jugador1 = new Jugador("Eden Hazard" , 7 , 10 , 2 , 3);
-		Jugador jugador2 = new Jugador("Karim Benzema" , 9 , 15 , 2 , 4);
+		Jugador jugador2 = new Jugador("Karim Benzema" , 9 , 25 , 2 , 4);
 		Jugador jugador3 = new Jugador("Courtois" , 1 , 75 , 0 , 1);
 		Jugador jugador4 = new Jugador("Daniel Carvajal" , 2 , 0 , 0 , 3);
 		Jugador jugador5 = new Jugador("Marcelo" , 12 , 0 , 3 , 5);
