@@ -86,7 +86,7 @@ public class Main {
 		} else if (respuesta == 3) {
 			ligaSantander.mostrar5Expulsiones();
 		} else {
-			ligaSantander.mostrar5EquiposGoleadores();
+			ligaSantander.mostrar3EquiposGoleadores();
 		}
 		entrada.close();
 		
