@@ -63,10 +63,28 @@ public class Main {
 				jugador5 , jugador6 , jugador7 , jugador8 , jugador9
 				, jugador10 , jugador11};
 		Equipo equipo3 = new Equipo("Atl Madrid" , "Wanda Metropolitano" , 1903 
-				, jugadoresEquipo3 , 70 ,18 , 4 , 16);
+				, jugadoresEquipo3 , 70 , 18 , 4 , 16);
+		
+		//Creamos Sevilla FC (Equipo4)
+		jugador1 = new Jugador("Ivan Rakitic" , 10 , 5 , 0 , 2);
+		jugador2 = new Jugador("Luuk de Jong" , 9 , 3 , 0 , 3);
+		jugador3 = new Jugador("Jules Coundé" , 12 , 1 , 0 , 2);
+		jugador4 = new Jugador("Jesús Navas" , 16 , 20 , 1 , 5);
+		jugador5 = new Jugador("Ciro Immobile" , 17 , 5 , 1 , 3);
+		jugador6 = new Jugador("Suso" , 7 , 3 , 0 , 2);
+		jugador7 = new Jugador("Sergio Escudero" , 18 , 6 , 0 , 2);
+		jugador8 = new Jugador("Joaquín Correa" , 29 , 3 , 1 , 2);
+		jugador9 = new Jugador("Steven N´Zonzi" , 15 , 1 , 0 , 3);
+		jugador10 = new Jugador("Yassine Bounou" , 1 , 0 , 0 , 1);
+		jugador11 = new Jugador("Diego Carlos" , 20 , 2 , 3 , 3);
+		Jugador[] jugadoresEquipo4 = {jugador1 , jugador2, jugador3 , jugador4 ,
+				jugador5 , jugador6 , jugador7 , jugador8 , jugador9
+				, jugador10 , jugador11};
+		Equipo equipo4 = new Equipo("Sevilla FC" , "Ramón Sanchez-Pijuán" , 1890 
+				, jugadoresEquipo4 , 70 , 19 , 6 , 13);
 		
 		//Creamos la Liga
-		Equipo[] equiposLiga = {equipo1 , equipo2 , equipo3};
+		Equipo[] equiposLiga = {equipo1 , equipo2 , equipo3 , equipo4};
 		Liga ligaSantander = new Liga ("Liga Santander" , equiposLiga);
 		
 		//Creamos el Menú
