@@ -1,5 +1,10 @@
 package Practica1GestionLiga;
 
+/**
+ * Esta clase se encarga de definir todos los jugadores y los 15 equios de la liga, así
+ * como de crearla y de inicializar el menú
+ */
+
 import java.util.Scanner;
 
 public class Main {
@@ -28,7 +33,7 @@ public class Main {
 		jugador1 = new Jugador("Lionel Messi" , 10 , 30 , 0 , 4);
 		jugador2 = new Jugador("Antoine Griezmann" , 7 , 10 , 0 , 3);
 		jugador3 = new Jugador("Ansu Fati" , 22 , 15 , 0 , 2);
-		jugador4 = new Jugador("Marc-André ter Stegen" , 1 , 0 , 0 , 0);
+		jugador4 = new Jugador("Marc-André ter Stegen" , 1 , 5 , 0 , 0);
 		jugador5 = new Jugador("Gerard Piqué" , 3 , 31 , 3 , 5);
 		jugador6 = new Jugador("Miralem Pjanic" , 8 , 3 , 0 , 2);
 		jugador7 = new Jugador("Jordi Alba" , 18 , 2 , 1 , 2);
