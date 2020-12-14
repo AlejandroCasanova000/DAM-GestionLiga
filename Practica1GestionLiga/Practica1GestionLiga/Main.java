@@ -83,8 +83,26 @@ public class Main {
 		Equipo equipo4 = new Equipo("Sevilla FC" , "Ramón Sanchez-Pijuán" , 1890 
 				, jugadoresEquipo4 , 70 , 19 , 6 , 13);
 		
+		//Creamos Real Betis(Equipo4)
+		jugador1 = new Jugador("Claudio Bravo" , 25 , 1 , 0 , 0);
+		jugador2 = new Jugador("Joaquín" , 17 , 25 , 0 , 3);
+		jugador3 = new Jugador("Nabil Fekir" , 8 , 1 , 0 , 2);
+		jugador4 = new Jugador("Emerson Royal" , 22 , 20 , 1 , 5);
+		jugador5 = new Jugador("Cristian Tello" , 11 , 5 , 1 , 3);
+		jugador6 = new Jugador("Marc Bartra" , 5 , 3 , 0 , 2);
+		jugador7 = new Jugador("Aissa Mandi" , 23 , 6 , 0 , 2);
+		jugador8 = new Jugador("Juanmi Jiménez" , 7 , 3 , 1 , 2);
+		jugador9 = new Jugador("Sergio Canales" , 10 , 1 , 0 , 3);
+		jugador10 = new Jugador("William Carvalho" , 14 , 0 , 0 , 1);
+		jugador11 = new Jugador("Victor Ruiz Torre" , 6 , 2 , 3 , 3);
+		Jugador[] jugadoresEquipo5 = {jugador1 , jugador2, jugador3 , jugador4 ,
+				jugador5 , jugador6 , jugador7 , jugador8 , jugador9
+				, jugador10 , jugador11};
+		Equipo equipo5 = new Equipo("Real Betis" , "Benito Villamarín" , 1907 
+				, jugadoresEquipo5 , 89 , 5 , 7 , 1);
+		
 		//Creamos la Liga
-		Equipo[] equiposLiga = {equipo1 , equipo2 , equipo3 , equipo4};
+		Equipo[] equiposLiga = {equipo1 , equipo2 , equipo3 , equipo4 , equipo5};
 		Liga ligaSantander = new Liga ("Liga Santander" , equiposLiga);
 		
 		//Creamos el Menú
