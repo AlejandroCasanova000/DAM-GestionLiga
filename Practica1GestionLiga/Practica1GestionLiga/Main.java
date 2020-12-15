@@ -33,7 +33,7 @@ public class Main {
 		jugador1 = new Jugador("Lionel Messi" , 10 , 30 , 0 , 4);
 		jugador2 = new Jugador("Antoine Griezmann" , 7 , 10 , 0 , 3);
 		jugador3 = new Jugador("Ansu Fati" , 22 , 15 , 0 , 2);
-		jugador4 = new Jugador("Marc-André ter Stegen" , 1 , 5 , 0 , 0);
+		jugador4 = new Jugador("Marc-André ter Stegen" , 1 , 151 , 0 , 0);
 		jugador5 = new Jugador("Gerard Piqué" , 3 , 31 , 3 , 5);
 		jugador6 = new Jugador("Miralem Pjanic" , 8 , 3 , 0 , 2);
 		jugador7 = new Jugador("Jordi Alba" , 18 , 2 , 1 , 2);
@@ -75,7 +75,7 @@ public class Main {
 		jugador7 = new Jugador("Sergio Escudero" , 18 , 6 , 0 , 2);
 		jugador8 = new Jugador("Joaquín Correa" , 29 , 3 , 1 , 2);
 		jugador9 = new Jugador("Steven N´Zonzi" , 15 , 1 , 0 , 3);
-		jugador10 = new Jugador("Yassine Bounou" , 1 , 0 , 0 , 1);
+		jugador10 = new Jugador("Yassine Bounou" , 1 , 198 , 0 , 1);
 		jugador11 = new Jugador("Diego Carlos" , 20 , 2 , 3 , 3);
 		Jugador[] jugadoresEquipo4 = {jugador1 , jugador2, jugador3 , jugador4 ,
 				jugador5 , jugador6 , jugador7 , jugador8 , jugador9
@@ -86,14 +86,14 @@ public class Main {
 		//Creamos Real Betis(Equipo4)
 		jugador1 = new Jugador("Claudio Bravo" , 25 , 1 , 0 , 0);
 		jugador2 = new Jugador("Joaquín" , 17 , 25 , 0 , 3);
-		jugador3 = new Jugador("Nabil Fekir" , 8 , 1 , 0 , 2);
+		jugador3 = new Jugador("Nabil Fekir" , 8 , 145 , 0 , 2);
 		jugador4 = new Jugador("Emerson Royal" , 22 , 20 , 1 , 5);
 		jugador5 = new Jugador("Cristian Tello" , 11 , 5 , 1 , 3);
 		jugador6 = new Jugador("Marc Bartra" , 5 , 3 , 0 , 2);
 		jugador7 = new Jugador("Aissa Mandi" , 23 , 6 , 0 , 2);
 		jugador8 = new Jugador("Juanmi Jiménez" , 7 , 3 , 1 , 2);
 		jugador9 = new Jugador("Sergio Canales" , 10 , 1 , 0 , 3);
-		jugador10 = new Jugador("William Carvalho" , 14 , 34 , 0 , 1);
+		jugador10 = new Jugador("William Carvalho" , 14 , 36 , 0 , 1);
 		jugador11 = new Jugador("Victor Ruiz Torre" , 6 , 2 , 1 , 3);
 		Jugador[] jugadoresEquipo5 = {jugador1 , jugador2, jugador3 , jugador4 ,
 				jugador5 , jugador6 , jugador7 , jugador8 , jugador9
