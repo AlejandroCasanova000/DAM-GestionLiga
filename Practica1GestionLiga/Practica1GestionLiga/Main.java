@@ -93,8 +93,8 @@ public class Main {
 		jugador7 = new Jugador("Aissa Mandi" , 23 , 6 , 0 , 2);
 		jugador8 = new Jugador("Juanmi Jiménez" , 7 , 3 , 1 , 2);
 		jugador9 = new Jugador("Sergio Canales" , 10 , 1 , 0 , 3);
-		jugador10 = new Jugador("William Carvalho" , 14 , 0 , 0 , 1);
-		jugador11 = new Jugador("Victor Ruiz Torre" , 6 , 2 , 3 , 3);
+		jugador10 = new Jugador("William Carvalho" , 14 , 34 , 0 , 1);
+		jugador11 = new Jugador("Victor Ruiz Torre" , 6 , 2 , 1 , 3);
 		Jugador[] jugadoresEquipo5 = {jugador1 , jugador2, jugador3 , jugador4 ,
 				jugador5 , jugador6 , jugador7 , jugador8 , jugador9
 				, jugador10 , jugador11};

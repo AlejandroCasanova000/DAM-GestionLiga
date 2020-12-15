@@ -211,18 +211,32 @@ public class Liga {
 		int mayorGoles = clasificacion[0].getGolesAFavor() - 1;
 		int golesMaximos = clasificacion[0].getGolesAFavor() + 1;
 		int indexGoleador = 0;
+		String nombreEquipo = "";
+		/**
+		 * Este bucle se ejecuta tres veces, en cada iteración del primer bucle se
+		 * comparan los goles a favor de un equipo, la primera vez se guarda como si
+		 * fueran los maximos goleadores, y en las sigiente ese dato se compara con el
+		 * siguiente y si es mayor, se cambian los datos, asi sucesivamente hasta que se
+		 * saca el mayor goleador de la liga, cuando i pasa a ser de 1 en adelante, 
+		 * la consicion para encontrar el siguiente maximo goleador, el computo de goles
+		 * a favor debe de ser menor que el de la iteración anterior + 1 (por si hay
+		 * equipos con el mismo numnero de goles), y nombre distinto al anterior.
+		 */
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < clasificacion.length; j++) {
 				if (i == 0) {
 					if (clasificacion[j].getGolesAFavor() > mayorGoles) {
 						mayorGoles = clasificacion[j].getGolesAFavor();
 						indexGoleador = j;
+						nombreEquipo = clasificacion[j].getNombre() + 1;
 					}
 				} else {
 					if (clasificacion[j].getGolesAFavor() > mayorGoles && 
-							clasificacion[j].getGolesAFavor() < golesMaximos) {
-						mayorGoles = clasificacion[j].getGolesAFavor();
+							clasificacion[j].getGolesAFavor() < golesMaximos && 
+							!clasificacion[j].getNombre().equals(nombreEquipo)) {
+						mayorGoles = clasificacion[j].getGolesAFavor() + 1;
 						indexGoleador = j;
+						nombreEquipo = clasificacion[j].getNombre();
 					}
 				}
 			}
@@ -234,7 +248,7 @@ public class Liga {
 		System.out.format("+-----------------+------+%n");
 		System.out.format("| Equipo          |Goles |%n");
 		System.out.format("+-----------------+------+%n");
-		for (int i = 0; i < equiposOrdenados.length; i++) {
+		for (int i = 0; i < 3; i++) {
 		    System.out.format(leftAlignFormat, equiposOrdenados[i].getNombre() , 
 		    		equiposOrdenados[i].getGolesAFavor());
 		}
