@@ -205,13 +205,18 @@ public class Liga {
 	 * getGolesAFavor ha de ser menor que el de la iteración anterior (variable 
 	 * golesMaximos).
 	 */
+	
 	public void mostrar3EquiposGoleadores() {
 		System.out.println("Top 3 equipos goleadores: ");
 		Equipo[] equiposOrdenados = new Equipo[clasificacion.length];
 		int mayorGoles = clasificacion[0].getGolesAFavor() - 1;
 		int golesMaximos = clasificacion[0].getGolesAFavor() + 1;
 		int indexGoleador = 0;
-		String nombreEquipo = "";
+		String[] tablaNombres = new String[equiposOrdenados.length];
+		for (int i = 0; i < tablaNombres.length; i++) {
+			tablaNombres[i] = "";
+		}
+		int indexTablaNombres = 0;
 		/**
 		 * Este bucle se ejecuta tres veces, en cada iteración del primer bucle se
 		 * comparan los goles a favor de un equipo, la primera vez se guarda como si
@@ -220,38 +225,58 @@ public class Liga {
 		 * saca el mayor goleador de la liga, cuando i pasa a ser de 1 en adelante, 
 		 * la consicion para encontrar el siguiente maximo goleador, el computo de goles
 		 * a favor debe de ser menor que el de la iteración anterior + 1 (por si hay
-		 * equipos con el mismo numnero de goles), y nombre distinto al anterior.
+		 * equipos con el mismo numnero de goles), y nombre distinto a alguno de los
+		 * anteriores top goleadores almacenados en la tabla nombreEquipos.
 		 */
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < clasificacion.length; j++) {
 				if (i == 0) {
 					if (clasificacion[j].getGolesAFavor() > mayorGoles) {
-						mayorGoles = clasificacion[j].getGolesAFavor();
+						mayorGoles = clasificacion[j].getGolesAFavor() + 1;
 						indexGoleador = j;
-						nombreEquipo = clasificacion[j].getNombre() + 1;
+						tablaNombres[indexTablaNombres] = clasificacion[j].getNombre();
 					}
 				} else {
 					if (clasificacion[j].getGolesAFavor() > mayorGoles && 
-							clasificacion[j].getGolesAFavor() < golesMaximos && 
-							!clasificacion[j].getNombre().equals(nombreEquipo)) {
+							clasificacion[j].getGolesAFavor() < golesMaximos &&
+							!this.comprobarEquipoEnTabla(tablaNombres ,
+									clasificacion[j])) {
 						mayorGoles = clasificacion[j].getGolesAFavor() + 1;
 						indexGoleador = j;
-						nombreEquipo = clasificacion[j].getNombre();
 					}
 				}
 			}
 			golesMaximos = mayorGoles;
 			equiposOrdenados[i] = clasificacion[indexGoleador];
+			tablaNombres[indexTablaNombres] = equiposOrdenados[i].getNombre();
+			indexTablaNombres++;
 			mayorGoles = 0;
 		}
 		String leftAlignFormat = "| %-15s | %-4d |%n";
 		System.out.format("+-----------------+------+%n");
 		System.out.format("| Equipo          |Goles |%n");
 		System.out.format("+-----------------+------+%n");
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 5; i++) {
 		    System.out.format(leftAlignFormat, equiposOrdenados[i].getNombre() , 
 		    		equiposOrdenados[i].getGolesAFavor());
 		}
 		System.out.format("+-----------------+------+%n");
+	}
+	
+	/**
+	 * Pre: Este método comprueba si el Equipo [equipo] se encuentra en la tabla 
+	 * [tablaNombres]
+	 * @param tablaNombres
+	 * @param equipo
+	 * @return
+	 */
+	public boolean comprobarEquipoEnTabla(String[] tablaNombres , Equipo equipo) {
+		boolean ok = false;
+		for (int i = 0; i < clasificacion.length; i++) {
+			if (equipo.getNombre().equals(tablaNombres[i])) {
+				ok = true;
+			}
+		}
+		return ok;
 	}
 }
