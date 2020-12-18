@@ -91,7 +91,7 @@ public class Main {
 				jugador9, jugador10, jugador11 };
 		Equipo equipo5 = new Equipo("Real Betis", "Benito Villamarín", 1907, jugadoresEquipo5, 89, 5, 7, 1);
 
-		// Creamos CD Tenerife(equipo6)//
+		// Creamos CD Tenerife(equipo6)
 		jugador1 = new Jugador("Luis Perez", 2, 4, 0, 0);
 		jugador2 = new Jugador("Isma Lopez", 18, 10, 0, 1);
 		jugador3 = new Jugador("Naranjo", 7, 5, 1, 1);
@@ -107,7 +107,7 @@ public class Main {
 				jugador9, jugador10, jugador11 };
 		Equipo equipo6 = new Equipo("CD Tenerife", "Luis Miguel Ramis", 1912, jugadoresEquipo6, 53, 4, 2,
 				2);
-		// Creamos Chelsea FC(equipo7)//
+		// Creamos Chelsea FC(equipo7)
 		jugador1 = new Jugador("Kepa Arrizabalaga", 1, 8, 0, 0);
 		jugador2 = new Jugador("Antonio Rudiguer", 2, 10, 0, 1);
 		jugador3 = new Jugador("Marcos Alonso", 3, 7, 0, 1);
@@ -123,7 +123,7 @@ public class Main {
 				jugador9, jugador10, jugador11 };
 		Equipo equipo7 = new Equipo("Chelsea FC", "Frank Lampard", 1905, jugadoresEquipo7, 63, 4, 3, 5);
 
-		// Creamos Galatasaray SK(equipo 8)//
+		// Creamos Galatasaray SK(equipo 8)
 		jugador1 = new Jugador("Sener Ozbayrakli", 2, 6, 0, 0);
 		jugador2 = new Jugador("Omar Elabdellaoui", 3, 8, 1, 1);
 		jugador3 = new Jugador("Younes Belhanda", 10, 3, 0, 3);
@@ -139,7 +139,7 @@ public class Main {
 				jugador9, jugador10, jugador11 };
 		Equipo equipo8 = new Equipo("Galatasaray SK", "Fatih Terim", 1905, jugadoresEquipo8, 47, 2, 1, 3);
 
-		// Creamos FC Union Berlin(equipo 9)//
+		// Creamos FC Union Berlin(equipo 9)
 		jugador1 = new Jugador("Andrreas Luthe", 1, 5, 1, 0);
 		jugador2 = new Jugador("Loris Karius", 20, 9, 1, 1);
 		jugador3 = new Jugador("Nico Schlotterbeck", 4, 6, 0, 3);
@@ -155,7 +155,7 @@ public class Main {
 				jugador9, jugador10, jugador11 };
 		Equipo equipo9 = new Equipo("FC Union Berlin", "Urs Fischer", 1906, jugadoresEquipo9, 58, 4, 1, 3);
 
-		// Creamos CD Numancia Soria(equipo 10)//
+		// Creamos CD Numancia Soria(equipo 10)
 		jugador1 = new Jugador("Roberto Jara", 1, 6, 1, 0);
 		jugador2 = new Jugador("Borja San Emeterio", 2, 9, 0, 0);
 		jugador3 = new Jugador("David Castro", 3, 6, 0, 2);
@@ -171,7 +171,7 @@ public class Main {
 				jugador9, jugador10, jugador11 };
 		Equipo equipo10 = new Equipo("Numancia Soria", "Manix Mandiola", 1945, jugadoresEquipo10, 26, 1, 0, 2);
 
-		// Creamos FC Girona(equipo 11)//
+		// Creamos FC Girona(equipo 11)
 		jugador1 = new Jugador("Juan Carlos Martin", 1, 7, 1, 0);
 		jugador2 = new Jugador("Enric Franquesa", 3, 9, 0, 0);
 		jugador3 = new Jugador("Aday Benitez", 11, 7, 0, 2);
@@ -187,7 +187,7 @@ public class Main {
 				jugador9, jugador10, jugador11 };
 		Equipo equipo11 = new Equipo("FC Girona", "Francisco Rodriguez", 1930, jugadoresEquipo11, 32, 1, 2, 3);
 
-		// Creamos FC Sabadell(equipo 12)//
+		// Creamos FC Sabadell(equipo 12)
 		jugador1 = new Jugador("Ian Mackay", 1, 7, 1, 1);
 		jugador2 = new Jugador("Diego Fuoli", 13, 9, 0, 0);
 		jugador3 = new Jugador("Josu Ozloidi", 3, 6, 0, 2);
@@ -203,7 +203,7 @@ public class Main {
 				jugador9, jugador10, jugador11 };
 		Equipo equipo12 = new Equipo("FC Sabadell", "Antonio Hidalgo Morilla", 1903, jugadoresEquipo12, 23, 0, 1, 3);
 
-		// Creamos Hercules Alicante FC(equipo 13)//
+		// Creamos Hercules Alicante FC(equipo 13)
 		jugador1 = new Jugador("Ismael Falcon", 1, 6, 0, 1);
 		jugador2 = new Jugador("Adri Lopez", 13, 8, 1, 0);
 		jugador3 = new Jugador("Raul Ruiz", 2, 6, 1, 2);
@@ -220,7 +220,7 @@ public class Main {
 		Equipo equipo13 = new Equipo("FC Alicante", "David Garcia Cubillo", 1922, jugadoresEquipo13, 37, 0, 3,
 				3);
 
-		// Creamos Sevilla FC(equipo 14)//
+		// Creamos Sevilla FC(equipo 14)
 		jugador1 = new Jugador("Tomas Vaclik", 1, 6, 1, 1);
 		jugador2 = new Jugador("Javi Diaz", 31, 8, 1, 0);
 		jugador3 = new Jugador("Sergi Gomez", 3, 7, 0, 2);
@@ -236,7 +236,7 @@ public class Main {
 				jugador9, jugador10, jugador11 };
 		Equipo equipo14 = new Equipo("Sevilla FC", "Julen Lopetegui", 1890, jugadoresEquipo14, 23, 0, 3, 2);
 
-		// Creamos Real Zaragoza(equipo 15)//
+		// Creamos Real Zaragoza(equipo 15)
 		jugador1 = new Jugador("Cristian Alavarez", 1, 7, 1, 1);
 		jugador2 = new Jugador("Alavaro Raton", 13, 8, 1, 1);
 		jugador3 = new Jugador("Alberto Guitian", 6, 8, 0, 2);
@@ -258,30 +258,36 @@ public class Main {
 
 		// Creamos el Menú
 		int respuesta = 0;
-		System.out.println("Bienvenido al programa de gestión de la " + 
-				ligaSantander.getNombre() + "\n************************************"
-						+ "*********************");
-		System.out.println("Introduce 1 para mostrar la Tabla de Clasificacion");
-		System.out.println("Introduce 2 para mostrar Top 5 Pichichis");
-		System.out.println("Introduce 3 para mostrar los 5 jugadores con más expulsiones");
-		System.out.println("Introduce 4 para mostrar los 5 equipos mas goleadores");
-		while (respuesta < 1 || respuesta > 4) {
-			respuesta = entrada.nextInt();
-			if (respuesta < 1 || respuesta > 4) {
-				System.out.print("Introduce un Número entre 1 y 4!!!!!");
+		String respuestaPrograma = "y";
+		while(!respuestaPrograma.equals("n")) {
+			System.out.println("Bienvenido al programa de gestión de la " + 
+					ligaSantander.getNombre() + "\n************************************"
+							+ "*********************");
+			System.out.println("Introduce 1 para mostrar la Tabla de Clasificacion");
+			System.out.println("Introduce 2 para mostrar Top 5 Pichichis");
+			System.out.println("Introduce 3 para mostrar los 5 jugadores con más "
+					+ "expulsiones");
+			System.out.println("Introduce 4 para mostrar los 5 equipos mas goleadores");
+			while (respuesta < 1 || respuesta > 4) {
+				respuesta = entrada.nextInt();
+				if (respuesta < 1 || respuesta > 4) {
+					System.out.print("Introduce un Número entre 1 y 4!!!!!");
+				}
 			}
-		}
-		System.out.println();
-		if (respuesta == 1) {
-			ligaSantander.mostrarOrdeadaPorPuntos();
-		} else if (respuesta == 2) {
-			ligaSantander.mostrar5Goleadores();
-		} else if (respuesta == 3) {
-			ligaSantander.mostrar5Expulsiones();
-		} else {
-			ligaSantander.mostrar3EquiposGoleadores();
+			System.out.println();
+			if (respuesta == 1) {
+				ligaSantander.mostrarOrdeadaPorPuntos();
+			} else if (respuesta == 2) {
+				ligaSantander.mostrar5Goleadores();
+			} else if (respuesta == 3) {
+				ligaSantander.mostrar5Expulsiones();
+			} else {
+				ligaSantander.mostrar3EquiposGoleadores();
+			}
+			System.out.println("¿Quieres continuar? y/n");
+			respuestaPrograma = entrada.next();
+			respuesta = 0;
 		}
 		entrada.close();
 	}
-
 }
