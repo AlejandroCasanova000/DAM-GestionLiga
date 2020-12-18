@@ -67,24 +67,20 @@ public class Liga {
 		System.out.format("+-----------------+------+%n");
 		System.out.format("| Equipo          |PTS   |%n");
 		System.out.format("+-----------------+------+%n");
-		Equipo[] equipos = new Equipo[clasificacion.length];//Tabla auxiliar para no machacar los puntos de la real
-		for (int i = 0; i < clasificacion.length; i++) {
-			equipos[i] = clasificacion[i];
-		}
-		int mayor = equipos[0].getPuntos();
-		Equipo equipoMayor = equipos[0];
+		int mayor = clasificacion[0].getPuntos() + 1;
+		Equipo equipoMayor = clasificacion[0];
 		int indexEliminar = 0;
-		for (int i = 0; i < equipos.length; i++) {
-			for (int j = 0; j < equipos.length; j++) {
-				if (equipos[j].getPuntos() > mayor) {
-					equipoMayor = equipos[j];
-					mayor = equipos[j].getPuntos();
+		for (int i = 0; i < clasificacion.length; i++) {
+			for (int j = 0; j < clasificacion.length; j++) {
+				if (clasificacion[j].getPuntos() > mayor) {
+					equipoMayor = clasificacion[j];
+					mayor = clasificacion[j].getPuntos();
 					indexEliminar = j;
 				}
 			}
 		    System.out.format(leftAlignFormat, equipoMayor.getNombre() , 
 		    		equipoMayor.getPuntos());
-			equipos[indexEliminar].setPuntos(-1);
+		    clasificacion[indexEliminar].setPuntos(-1);
 			mayor = -1;
 		}
 		System.out.format("+-----------------+------+%n");
@@ -133,29 +129,29 @@ public class Liga {
 	 */
 	public void mostrar5Goleadores() {
 		System.out.println("El Top 5 Pichichis: ");
-		String leftAlignFormat = "| %-16s | %-3d |%n";
-		System.out.format("+-----------------+-------+%n");
-		System.out.format("| Jugador          |Goles |%n");
-		System.out.format("+-----------------+-------+%n");
-		Jugador[] jugadores = new Jugador[this.jugadoresLiga().length];
-		jugadores = this.jugadoresLiga();
-		int mayorGoles = jugadores[0].getGoles();
+		String leftAlignFormat = "| %-15s | %-3d |%n";
+		System.out.format("+-----------------+-----+%n");
+		System.out.format("| Jugador         |Goles|%n");
+		System.out.format("+-----------------+-----+%n");
+		Jugador[] jugadoresLiga = new Jugador[this.jugadoresLiga().length];
+		jugadoresLiga = this.jugadoresLiga();
+		int mayorGoles = jugadoresLiga[0].getGoles();
 		int indexGoles = 0;
-		Jugador mayorGoleador = jugadores[0];
+		Jugador mayorGoleador = jugadoresLiga[0];
 		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < jugadores.length; j++) {
-				if (jugadores[j].getGoles() > mayorGoles) {
-					mayorGoles = jugadores[j].getGoles();
-					mayorGoleador = jugadores[j];
+			for (int j = 0; j < jugadoresLiga.length; j++) {
+				if (jugadoresLiga[j].getGoles() > mayorGoles) {
+					mayorGoles = jugadoresLiga[j].getGoles();
+					mayorGoleador = jugadoresLiga[j];
 					indexGoles = j;
 				}
 			}
 			System.out.format(leftAlignFormat, mayorGoleador.getNombre() ,
 		    		mayorGoleador.getGoles());
 			mayorGoles = -1;
-			jugadores[indexGoles].setGoles(-1);
+			jugadoresLiga[indexGoles].setGoles(-1);
 		}
-		System.out.format("+-----------------+-------+%n");
+		System.out.format("+-----------------+-----+%n");
 	}
 	
 	/**
@@ -177,17 +173,17 @@ public class Liga {
 		jugadores = this.jugadoresLiga();
 		int mayorExplusiones = jugadores[0].getTarjetasRojas();
 		int indexExpulsiones = 0;
-		Jugador mayorGoleador = jugadores[0];
+		Jugador mayorCarnicero = jugadores[0];
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < jugadores.length; j++) {
 				if (jugadores[j].getTarjetasRojas() > mayorExplusiones) {
 					mayorExplusiones = jugadores[j].getTarjetasRojas();
-					mayorGoleador = jugadores[j];
+					mayorCarnicero = jugadores[j];
 					indexExpulsiones = j;
 				}
 			}
-			System.out.format(leftAlignFormat, mayorGoleador.getNombre() ,
-		    		mayorGoleador.getTarjetasRojas());
+			System.out.format(leftAlignFormat, mayorCarnicero.getNombre() ,
+		    		mayorCarnicero.getTarjetasRojas());
 			mayorExplusiones = -1;
 			jugadores[indexExpulsiones].setTarjetasRojas(-1);
 		}
@@ -205,7 +201,6 @@ public class Liga {
 	 * getGolesAFavor ha de ser menor que el de la iteración anterior (variable 
 	 * golesMaximos).
 	 */
-	
 	public void mostrar3EquiposGoleadores() {
 		System.out.println("Top 3 equipos goleadores: ");
 		Equipo[] equiposOrdenados = new Equipo[clasificacion.length];
@@ -234,7 +229,6 @@ public class Liga {
 					if (clasificacion[j].getGolesAFavor() > mayorGoles) {
 						mayorGoles = clasificacion[j].getGolesAFavor() + 1;
 						indexGoleador = j;
-						tablaNombres[indexTablaNombres] = clasificacion[j].getNombre();
 					}
 				} else {
 					if (clasificacion[j].getGolesAFavor() > mayorGoles && 
