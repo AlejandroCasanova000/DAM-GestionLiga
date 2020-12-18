@@ -287,6 +287,9 @@ public class Main {
 			System.out.println("¿Quieres continuar? y/n");
 			respuestaPrograma = entrada.next();
 			respuesta = 0;
+			if (respuestaPrograma.equals("y")) {
+				System.out.println("-------------------------------------");
+			}
 		}
 		entrada.close();
 	}
