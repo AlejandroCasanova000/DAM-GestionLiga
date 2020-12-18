@@ -65,8 +65,13 @@ public class Liga {
 		System.out.println("La tabla de clasificación: ");
 		String leftAlignFormat = "| %-15s | %-4d |%n";
 		System.out.format("+-----------------+------+%n");
-		System.out.format("| Equipo          |PTS   |%n");
+		System.out.format("| Equipo          |Puntos|%n");
 		System.out.format("+-----------------+------+%n");
+		int[] puntos = new int[clasificacion.length];
+		//Guardamos los puntos para luego no perderlos
+		for (int i = 0; i < puntos.length; i++) {
+			puntos[i] = clasificacion[i].getPuntos();
+		}
 		int mayor = clasificacion[0].getPuntos() + 1;
 		Equipo equipoMayor = clasificacion[0];
 		int indexEliminar = 0;
@@ -78,12 +83,17 @@ public class Liga {
 					indexEliminar = j;
 				}
 			}
-		    System.out.format(leftAlignFormat, equipoMayor.getNombre() , 
+		    System.out.format(leftAlignFormat ,  equipoMayor.getNombre() , 
 		    		equipoMayor.getPuntos());
 		    clasificacion[indexEliminar].setPuntos(-1);
 			mayor = -1;
 		}
 		System.out.format("+-----------------+------+%n");
+		
+		//Finalmente Volvemos a poner los puntos que han sido machacados
+		for (int i = 0; i < puntos.length; i++) {
+			clasificacion[i].setPuntos(puntos[i]);
+		}
 	}
 	
 	/**
@@ -135,6 +145,10 @@ public class Liga {
 		System.out.format("+-----------------+-----+%n");
 		Jugador[] jugadoresLiga = new Jugador[this.jugadoresLiga().length];
 		jugadoresLiga = this.jugadoresLiga();
+		int[] goles = new int[jugadoresLiga.length];
+		for (int i = 0; i < goles.length; i++) {
+			goles[i] = jugadoresLiga[i].getGoles();
+		}
 		int mayorGoles = jugadoresLiga[0].getGoles();
 		int indexGoles = 0;
 		Jugador mayorGoleador = jugadoresLiga[0];
@@ -152,6 +166,11 @@ public class Liga {
 			jugadoresLiga[indexGoles].setGoles(-1);
 		}
 		System.out.format("+-----------------+-----+%n");
+		
+		//Finalmente volvemos a poner los goles machacados
+		for (int i = 0; i < goles.length; i++) {
+			jugadoresLiga[i].setGoles(goles[i]);
+		}
 	}
 	
 	/**
@@ -171,6 +190,12 @@ public class Liga {
 		System.out.format("+-----------------+------+%n");
 		Jugador[] jugadores = new Jugador[this.jugadoresLiga().length];
 		jugadores = this.jugadoresLiga();
+		
+		//Guardamos las Tarjetas rojas para luego poder Machacarlas
+		int[] rojas = new int[jugadores.length];
+		for (int i = 0; i < rojas.length; i++) {
+			rojas[i] = jugadores[i].getTarjetasRojas();
+		}
 		int mayorExplusiones = jugadores[0].getTarjetasRojas();
 		int indexExpulsiones = 0;
 		Jugador mayorCarnicero = jugadores[0];
@@ -188,6 +213,11 @@ public class Liga {
 			jugadores[indexExpulsiones].setTarjetasRojas(-1);
 		}
 		System.out.format("+-----------------+------+%n");
+		
+		//Finalmente volvemos a poner las tarjetas rojas machacadas
+		for (int i = 0; i < jugadores.length; i++) {
+			jugadores[i].setTarjetasRojas(rojas[i]);
+		}
 	}
 	
 	/**
