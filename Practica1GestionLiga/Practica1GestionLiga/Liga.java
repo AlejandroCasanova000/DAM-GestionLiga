@@ -63,10 +63,13 @@ public class Liga {
 	 */
 	public void mostrarOrdeadaPorPuntos() {
 		System.out.println("La tabla de clasificación: ");
-		String leftAlignFormat = "| %-15s | %-4d |%n";
-		System.out.format("+-----------------+------+%n");
-		System.out.format("| Equipo          |Puntos|%n");
-		System.out.format("+-----------------+------+%n");
+		String leftAlignFormat = "| %-15s | %-4d | %-5d | %-6d | %-7d | %-3d |%n";
+		System.out.format("+-----------------+------+-------+--------+---------+-----+"
+				+ "%n");
+		System.out.format("| Equipo          |Puntos|Ganados|Perdidos|Empatados|Goles|"
+				+ "%n");
+		System.out.format("+-----------------+------+-------+--------+---------+-----+"
+				+ "%n");
 		int[] puntos = new int[clasificacion.length];
 		//Guardamos los puntos para luego no perderlos
 		for (int i = 0; i < puntos.length; i++) {
@@ -84,11 +87,18 @@ public class Liga {
 				}
 			}
 		    System.out.format(leftAlignFormat ,  equipoMayor.getNombre() , 
-		    		equipoMayor.getPuntos());
+		    		equipoMayor.getPuntos() , equipoMayor.getPartidosGanados() , 
+		    		equipoMayor.getPartidosPerdidos() ,equipoMayor.getPartidosEmpatados()
+		    		, equipoMayor.getGolesAFavor());
 		    clasificacion[indexEliminar].setPuntos(-1);
 			mayor = -1;
+		    if (i != clasificacion.length - 1) {
+			    System.out.format("+-----------------+------+-------+--------+--------"
+			    		+ "-+-----+%n");
+		    }
 		}
-		System.out.format("+-----------------+------+%n");
+		System.out.format("+-----------------+------+-------+--------+---------+-----+"
+				+ "%n");
 		
 		//Finalmente Volvemos a poner los puntos que han sido machacados
 		for (int i = 0; i < puntos.length; i++) {
@@ -280,7 +290,7 @@ public class Liga {
 		System.out.format("+-----------------+------+%n");
 		System.out.format("| Equipo          |Goles |%n");
 		System.out.format("+-----------------+------+%n");
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 3; i++) {
 		    System.out.format(leftAlignFormat, equiposOrdenados[i].getNombre() , 
 		    		equiposOrdenados[i].getGolesAFavor());
 		}

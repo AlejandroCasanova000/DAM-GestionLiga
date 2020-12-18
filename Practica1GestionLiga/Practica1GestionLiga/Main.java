@@ -105,8 +105,7 @@ public class Main {
 		jugador11 = new Jugador("Luis Milla", 6, 3, 1, 0);
 		Jugador[] jugadoresEquipo6 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo6 = new Equipo("CD Tenerife", "Luis Miguel Ramis", 1912, jugadoresEquipo6, 53, 4, 2,
-				2);
+		Equipo equipo6 = new Equipo("CD Tenerife", "Luis Miguel Ramis", 1912, jugadoresEquipo6, 53, 4, 2, 2);
 		// Creamos Chelsea FC(equipo7)
 		jugador1 = new Jugador("Kepa Arrizabalaga", 1, 8, 0, 0);
 		jugador2 = new Jugador("Antonio Rudiguer", 2, 10, 0, 1);
@@ -217,8 +216,7 @@ public class Main {
 		jugador11 = new Jugador("Manu Garrido", 12, 5, 2, 1);
 		Jugador[] jugadoresEquipo13 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo13 = new Equipo("FC Alicante", "David Garcia Cubillo", 1922, jugadoresEquipo13, 37, 0, 3,
-				3);
+		Equipo equipo13 = new Equipo("FC Alicante", "David Garcia Cubillo", 1922, jugadoresEquipo13, 37, 0, 3, 3);
 
 		// Creamos Sevilla FC(equipo 14)
 		jugador1 = new Jugador("Tomas Vaclik", 1, 6, 1, 1);
@@ -259,14 +257,12 @@ public class Main {
 		// Creamos el Menú
 		int respuesta = 0;
 		String respuestaPrograma = "y";
-		while(!respuestaPrograma.equals("n")) {
-			System.out.println("Bienvenido al programa de gestión de la " + 
-					ligaSantander.getNombre() + "\n************************************"
-							+ "*********************");
+		while (!respuestaPrograma.equals("n")) {
+			System.out.println("Bienvenido al programa de gestión de la " + ligaSantander.getNombre()
+					+ "\n************************************" + "*********************");
 			System.out.println("Introduce 1 para mostrar la Tabla de Clasificacion");
 			System.out.println("Introduce 2 para mostrar Top 5 Pichichis");
-			System.out.println("Introduce 3 para mostrar los 5 jugadores con más "
-					+ "expulsiones");
+			System.out.println("Introduce 3 para mostrar los 5 jugadores con más " + "expulsiones");
 			System.out.println("Introduce 4 para mostrar los 5 equipos mas goleadores");
 			while (respuesta < 1 || respuesta > 4) {
 				respuesta = entrada.nextInt();
