@@ -295,7 +295,7 @@ public class Liga {
 		System.out.format("+-----------------+------+%n");
 		System.out.format("| Equipo          |Goles |%n");
 		System.out.format("+-----------------+------+%n");
-		for (int i = 0; i < equiposOrdenados.length; i++) {
+		for (int i = 0; i < 3; i++) {
 		    System.out.format(leftAlignFormat, equiposOrdenados[i].getNombre() , 
 		    		equiposOrdenados[i].getGolesAFavor());
 		}
