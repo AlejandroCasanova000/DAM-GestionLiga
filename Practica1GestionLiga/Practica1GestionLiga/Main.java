@@ -23,9 +23,11 @@ public class Main {
 		Jugador jugador9 = new Jugador("Luka Modric", 10, 5, 0, 3);
 		Jugador jugador10 = new Jugador("Ferland Mendy", 23, 0, 2, 3);
 		Jugador jugador11 = new Jugador("Isco", 22, 3, 0, 3);
-		Jugador[] jugadoresEquipo1 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo1 = { jugador1, jugador2, jugador3, jugador4,
+				jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo1 = new Equipo("Real Madrid", "Santiago Bernabeu", 1902, jugadoresEquipo1, 87, 26, 9, 3);
+		Equipo equipo1 = new Equipo("Real Madrid", "Santiago Bernabeu", 1902,
+				jugadoresEquipo1, 87, 26, 9, 3);
 
 		// Creamos Barsa (Equipo 2) 86
 		jugador1 = new Jugador("Lionel Messi", 10, 30, 0, 4);
@@ -39,9 +41,11 @@ public class Main {
 		jugador9 = new Jugador("Francisco Trincao", 17, 0, 0, 3);
 		jugador10 = new Jugador("Clément Lenglet", 15, 0, 2, 3);
 		jugador11 = new Jugador("Pedri González", 16, 5, 0, 3);
-		Jugador[] jugadoresEquipo2 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo2 = { jugador1, jugador2, jugador3, jugador4,
+				jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo2 = new Equipo("FC Barcelona", "Camp Nou", 1899, jugadoresEquipo2, 82, 25, 6, 7);
+		Equipo equipo2 = new Equipo("FC Barcelona", "Camp Nou", 1899, 
+				jugadoresEquipo2, 82, 25, 6, 7);
 
 		// Creamos Atlético Madrid (Equipo 3) 22
 		jugador1 = new Jugador("Luis Suárez", 9, 5, 1, 2);
@@ -55,9 +59,11 @@ public class Main {
 		jugador9 = new Jugador("José María Giménez", 2, 1, 0, 3);
 		jugador10 = new Jugador("Jan Oblak", 13, 0, 0, 1);
 		jugador11 = new Jugador("Koke Resurrección", 6, 2, 1, 3);
-		Jugador[] jugadoresEquipo3 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo3 = { jugador1, jugador2, jugador3, jugador4,
+				jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo3 = new Equipo("Atl Madrid", "Wanda Metropolitano", 1903, jugadoresEquipo3, 70, 18, 4, 16);
+		Equipo equipo3 = new Equipo("Atl Madrid", "Wanda Metropolitano", 1903, 
+				jugadoresEquipo3, 70, 18, 4, 16);
 
 		// Creamos Sevilla FC (Equipo4)
 		jugador1 = new Jugador("Ivan Rakitic", 10, 5, 0, 2);
@@ -71,9 +77,11 @@ public class Main {
 		jugador9 = new Jugador("Steven N´Zonzi", 15, 1, 0, 3);
 		jugador10 = new Jugador("Yassine Bounou", 1, 198, 0, 1);
 		jugador11 = new Jugador("Diego Carlos", 20, 2, 3, 3);
-		Jugador[] jugadoresEquipo4 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo4 = { jugador1, jugador2, jugador3, jugador4,
+				jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo4 = new Equipo("Sevilla FC", "Ramón Sanchez-Pijuán", 1890, jugadoresEquipo4, 70, 19, 6, 13);
+		Equipo equipo4 = new Equipo("Sevilla FC", "Ramón Sanchez-Pijuán", 1890,
+				jugadoresEquipo4, 70, 19, 6, 13);
 
 		// Creamos Real Betis(Equipo5)
 		jugador1 = new Jugador("Claudio Bravo", 25, 1, 0, 0);
@@ -87,9 +95,11 @@ public class Main {
 		jugador9 = new Jugador("Sergio Canales", 10, 1, 0, 3);
 		jugador10 = new Jugador("William Carvalho", 14, 36, 0, 1);
 		jugador11 = new Jugador("Victor Ruiz Torre", 6, 2, 1, 3);
-		Jugador[] jugadoresEquipo5 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo5 = { jugador1, jugador2, jugador3, jugador4,
+				jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo5 = new Equipo("Real Betis", "Benito Villamarín", 1907, jugadoresEquipo5, 89, 5, 7, 1);
+		Equipo equipo5 = new Equipo("Real Betis", "Benito Villamarín", 1907,
+				jugadoresEquipo5, 89, 5, 7, 1);
 
 		// Creamos CD Tenerife(equipo6)
 		jugador1 = new Jugador("Luis Perez", 2, 4, 0, 0);
@@ -103,9 +113,11 @@ public class Main {
 		jugador9 = new Jugador("Daniel Lasure", 24, 6, 0, 1);
 		jugador10 = new Jugador("Lluis Lopez", 15, 8, 0, 0);
 		jugador11 = new Jugador("Luis Milla", 6, 3, 1, 0);
-		Jugador[] jugadoresEquipo6 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo6 = { jugador1, jugador2, jugador3, jugador4,
+				jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo6 = new Equipo("CD Tenerife", "Luis Miguel Ramis", 1912, jugadoresEquipo6, 53, 4, 2, 2);
+		Equipo equipo6 = new Equipo("CD Tenerife", "Heliodoro Rodríguez López", 1912,
+				jugadoresEquipo6, 53, 4, 2, 2);
 		// Creamos Chelsea FC(equipo7)
 		jugador1 = new Jugador("Kepa Arrizabalaga", 1, 8, 0, 0);
 		jugador2 = new Jugador("Antonio Rudiguer", 2, 10, 0, 1);
@@ -118,9 +130,11 @@ public class Main {
 		jugador9 = new Jugador("Mateo Kovacic", 17, 6, 0, 0);
 		jugador10 = new Jugador("Billy Gilmour", 23, 8, 0, 0);
 		jugador11 = new Jugador("Mason Mount", 19, 4, 0, 0);
-		Jugador[] jugadoresEquipo7 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo7 = { jugador1, jugador2, jugador3, jugador4,
+				jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo7 = new Equipo("Chelsea FC", "Frank Lampard", 1905, jugadoresEquipo7, 63, 4, 3, 5);
+		Equipo equipo7 = new Equipo("Chelsea FC", "Stamford Bridge", 1905,
+				jugadoresEquipo7, 63, 4, 3, 5);
 
 		// Creamos Galatasaray SK(equipo 8)
 		jugador1 = new Jugador("Sener Ozbayrakli", 2, 6, 0, 0);
@@ -134,9 +148,11 @@ public class Main {
 		jugador9 = new Jugador("Ryan Babel", 11, 4, 0, 3);
 		jugador10 = new Jugador("Radamel Falcao", 9, 2, 3, 3);
 		jugador11 = new Jugador("Omer Bayram", 19, 1, 4, 3);
-		Jugador[] jugadoresEquipo8 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo8 = { jugador1, jugador2, jugador3, jugador4,
+				jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo8 = new Equipo("Galatasaray SK", "Fatih Terim", 1905, jugadoresEquipo8, 47, 2, 1, 3);
+		Equipo equipo8 = new Equipo("Galatasaray SK", "Türk Telekom Stadium", 1905,
+				jugadoresEquipo8, 47, 2, 1, 3);
 
 		// Creamos FC Union Berlin(equipo 9)
 		jugador1 = new Jugador("Andrreas Luthe", 1, 5, 1, 0);
@@ -150,9 +166,11 @@ public class Main {
 		jugador9 = new Jugador("Sebastian Griesbeck", 33, 4, 1, 3);
 		jugador10 = new Jugador("Christian Gentner", 34, 2, 3, 3);
 		jugador11 = new Jugador("Berkan Taz", 31, 6, 1, 2);
-		Jugador[] jugadoresEquipo9 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo9 = { jugador1, jugador2, jugador3,
+				jugador4, jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo9 = new Equipo("FC Union Berlin", "Urs Fischer", 1906, jugadoresEquipo9, 58, 4, 1, 3);
+		Equipo equipo9 = new Equipo("FC Union Berlin", "Stadion An der Alten Försterei", 
+				1906, jugadoresEquipo9, 58, 4, 1, 3);
 
 		// Creamos CD Numancia Soria(equipo 10)
 		jugador1 = new Jugador("Roberto Jara", 1, 6, 1, 0);
@@ -166,9 +184,11 @@ public class Main {
 		jugador9 = new Jugador("Jesus Tamayo", 17, 4, 1, 3);
 		jugador10 = new Jugador("Toni Gabarre", 19, 4, 2, 3);
 		jugador11 = new Jugador("Oscar de Frutos", 27, 6, 1, 0);
-		Jugador[] jugadoresEquipo10 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo10 = { jugador1, jugador2, jugador3, 
+				jugador4, jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo10 = new Equipo("Numancia Soria", "Manix Mandiola", 1945, jugadoresEquipo10, 26, 1, 0, 2);
+		Equipo equipo10 = new Equipo("Numancia Soria", "Los Pajaritos",
+				1945, jugadoresEquipo10, 26, 1, 0, 2);
 
 		// Creamos FC Girona(equipo 11)
 		jugador1 = new Jugador("Juan Carlos Martin", 1, 7, 1, 0);
@@ -182,9 +202,11 @@ public class Main {
 		jugador9 = new Jugador("Ramon Terrats", 27, 5, 2, 3);
 		jugador10 = new Jugador("Pablo Moreno", 19, 4, 3, 3);
 		jugador11 = new Jugador("Adrian Turmo", 32, 6, 1, 2);
-		Jugador[] jugadoresEquipo11 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo11 = { jugador1, jugador2, jugador3,
+				jugador4, jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo11 = new Equipo("FC Girona", "Francisco Rodriguez", 1930, jugadoresEquipo11, 32, 1, 2, 3);
+		Equipo equipo11 = new Equipo("FC Girona", "Estadi Municipal Montilivi",
+				1930, jugadoresEquipo11, 32, 1, 2, 3);
 
 		// Creamos FC Sabadell(equipo 12)
 		jugador1 = new Jugador("Ian Mackay", 1, 7, 1, 1);
@@ -198,9 +220,12 @@ public class Main {
 		jugador9 = new Jugador("Jesus Olmo", 24, 5, 0, 3);
 		jugador10 = new Jugador("Juan Hernandez", 9, 2, 4, 3);
 		jugador11 = new Jugador("Gorka Guruzeta", 19, 5, 1, 1);
-		Jugador[] jugadoresEquipo12 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo12 = { jugador1, jugador2, jugador3,
+				
+				jugador4, jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo12 = new Equipo("FC Sabadell", "Antonio Hidalgo Morilla", 1903, jugadoresEquipo12, 23, 0, 1, 3);
+		Equipo equipo12 = new Equipo("FC Sabadell", "Nova Creu Alta", 
+				1903, jugadoresEquipo12, 23, 0, 1, 3);
 
 		// Creamos Hercules Alicante FC(equipo 13)
 		jugador1 = new Jugador("Ismael Falcon", 1, 6, 0, 1);
@@ -214,25 +239,29 @@ public class Main {
 		jugador9 = new Jugador("Jesus Alafaro", 11, 6, 0, 3);
 		jugador10 = new Jugador("Sergio Buenacasa", 9, 3, 2, 3);
 		jugador11 = new Jugador("Manu Garrido", 12, 5, 2, 1);
-		Jugador[] jugadoresEquipo13 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo13 = { jugador1, jugador2, jugador3,
+				jugador4, jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo13 = new Equipo("FC Alicante", "David Garcia Cubillo", 1922, jugadoresEquipo13, 37, 0, 3, 3);
+		Equipo equipo13 = new Equipo("FC Alicante", "Estadio Alicante CF", 
+				1922, jugadoresEquipo13, 37, 0, 3, 3);
 
 		// Creamos Sevilla FC(equipo 14)
-		jugador1 = new Jugador("Tomas Vaclik", 1, 6, 1, 1);
-		jugador2 = new Jugador("Javi Diaz", 31, 8, 1, 0);
-		jugador3 = new Jugador("Sergi Gomez", 3, 7, 0, 2);
-		jugador4 = new Jugador("Sergio Escudero", 18, 9, 1, 0);
-		jugador5 = new Jugador("Jules Kounde", 12, 7, 1, 2);
-		jugador6 = new Jugador("Marcos Acuña", 19, 6, 1, 1);
-		jugador7 = new Jugador("Juan Jordan", 8, 5, 0, 2);
-		jugador8 = new Jugador("Oliver Torres", 21, 6, 0, 1);
-		jugador9 = new Jugador("Carlos Fernandez", 24, 4, 1, 3);
-		jugador10 = new Jugador("Franco Vazquez", 9, 2, 3, 3);
-		jugador11 = new Jugador("Lucas Ocampos", 5, 5, 0, 1);
-		Jugador[] jugadoresEquipo14 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		jugador1 = new Jugador("Sergio Agüero", 1, 6, 1, 1);
+		jugador2 = new Jugador("Kevin de Bryune", 31, 8, 1, 0);
+		jugador3 = new Jugador("Ferran Torres", 3, 7, 0, 2);
+		jugador4 = new Jugador("Rodri Hernández", 18, 9, 1, 0);
+		jugador5 = new Jugador("Gabriel Jesús", 12, 7, 1, 2);
+		jugador6 = new Jugador("Cole Palmer", 19, 6, 1, 1);
+		jugador7 = new Jugador("Benjamin Mendy", 8, 7, 0, 2);
+		jugador8 = new Jugador("Bernardo Silva", 21, 6, 0, 1);
+		jugador9 = new Jugador("Ederson Morales", 24, 4, 1, 3);
+		jugador10 = new Jugador("Félix Nmecha", 9, 2, 3, 3);
+		jugador11 = new Jugador("John Stones", 5, 5, 0, 1);
+		Jugador[] jugadoresEquipo14 = { jugador1, jugador2, jugador3,
+				jugador4, jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo14 = new Equipo("Sevilla FC", "Julen Lopetegui", 1890, jugadoresEquipo14, 23, 0, 3, 2);
+		Equipo equipo14 = new Equipo("Manchester City", "Etihad Stadium", 1890,
+				jugadoresEquipo14, 85, 10, 3, 2);
 
 		// Creamos Real Zaragoza(equipo 15)
 		jugador1 = new Jugador("Cristian Alavarez", 1, 7, 1, 1);
@@ -246,12 +275,15 @@ public class Main {
 		jugador9 = new Jugador("Sergio Bermejo", 22, 5, 1, 3);
 		jugador10 = new Jugador("Luis Carbonell", 32, 1, 0, 3);
 		jugador11 = new Jugador("Ivan Azon", 31, 5, 3, 1);
-		Jugador[] jugadoresEquipo15 = { jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8,
+		Jugador[] jugadoresEquipo15 = { jugador1, jugador2, jugador3,
+				jugador4, jugador5, jugador6, jugador7, jugador8,
 				jugador9, jugador10, jugador11 };
-		Equipo equipo15 = new Equipo("Real Zaragoza", "Juan Ignacio Martinez", 1957, jugadoresEquipo15, 25, 4, 2, 3);
+		Equipo equipo15 = new Equipo("Real Zaragoza", "Juan Ignacio Martinez", 
+				1957, jugadoresEquipo15, 25, 4, 2, 3);
 		// Creamos la Liga
-		Equipo[] equiposLiga = { equipo1, equipo2, equipo3, equipo4, equipo5, equipo6, equipo7, equipo8, equipo9,
-				equipo10, equipo11, equipo12, equipo13, equipo14, equipo15 };
+		Equipo[] equiposLiga = { equipo1, equipo2, equipo3, equipo4, equipo5, 
+				equipo6, equipo7, equipo8, equipo9, equipo10, equipo11, equipo12,
+				equipo13, equipo14, equipo15 };
 		Liga ligaSantander = new Liga("Liga Santander", equiposLiga);
 
 		// Creamos el Menú

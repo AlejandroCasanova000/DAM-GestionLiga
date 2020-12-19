@@ -59,7 +59,8 @@ public class Liga {
 	 * Post: Para ello copia los equipos en la tabla (equipos) y la va recorriendo
 	 *  de tal manera que saca el equipo que más puntos tiene en el segundo bucle, 
 	 *  muestra por pantalla la informacion pedida y machaca los puntos
-	 *  al acabar para que no vuelva a salir el equipo
+	 *  al acabar para que no vuelva a salir el equipo (al final se recuperan los puntos
+	 *  para no perderlos
 	 */
 	public void mostrarOrdeadaPorPuntos() {
 		System.out.println("La tabla de clasificación: ");
@@ -145,7 +146,9 @@ public class Liga {
 	 * todos los njugadores de la liga, que se recorre buscando el mayor goleador en el
 	 * bucle de las j, una vez hecho eso se muestra por pantalla el nombre del jugador
 	 * y el número de goles, posteriormente se machaca el valor de los goles y se vuelve
-	 * a recorrer hasta que i sea 5, para mostrar los 5 pichichis.
+	 * a recorrer hasta que i sea 5, para mostrar los 5 pichichis. Al final los goles son
+	 * vueltos a poner para que se pueda volver a ejecutar sin necesidad de resetear el 
+	 * programa
 	 */
 	public void mostrar5Goleadores() {
 		System.out.println("El Top 5 Pichichis: ");
@@ -190,7 +193,8 @@ public class Liga {
 	 * estén todos los jugadores de la liga, posteriormente se recorre la tabla buscando
 	 * el jugador con mas tarjetas rojas (bucle de la j), se muestra por pantalla y se
 	 * machaca el valor de las tarjetas rojas, se vuelve a recorrer este proceso hasta
-	 * tener 5 jugadores con sus respectivas tarjetas
+	 * tener 5 jugadores con sus respectivas tarjetas. Al final se vuelven a poner las
+	 * tarjetas rojas machacadas.
 	 */
 	public void mostrar5Expulsiones() {
 		System.out.println("El Top 5 carniceros: ");
@@ -239,7 +243,8 @@ public class Liga {
 	 * se guarda en la casilla ordenada de equipoOrdenados, se reppite el proceso, pero
 	 * esta vez, para que no se repita el equipo con mas goles, el resultado devuelto por
 	 * getGolesAFavor ha de ser menor que el de la iteración anterior (variable 
-	 * golesMaximos).
+	 * golesMaximos) y no estar en la tabla de nombres (tablaNombres) de equipos ya 
+	 * ordenados (haciendo uso del método comprobarEquipoEnTabla()).
 	 */
 	public void mostrar3EquiposGoleadores() {
 		System.out.println("Top 3 equipos goleadores: ");
@@ -263,7 +268,7 @@ public class Liga {
 		 * equipos con el mismo numnero de goles), y nombre distinto a alguno de los
 		 * anteriores top goleadores almacenados en la tabla nombreEquipos.
 		 */
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < clasificacion.length; i++) {
 			for (int j = 0; j < clasificacion.length; j++) {
 				if (i == 0) {
 					if (clasificacion[j].getGolesAFavor() > mayorGoles) {
@@ -290,7 +295,7 @@ public class Liga {
 		System.out.format("+-----------------+------+%n");
 		System.out.format("| Equipo          |Goles |%n");
 		System.out.format("+-----------------+------+%n");
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < equiposOrdenados.length; i++) {
 		    System.out.format(leftAlignFormat, equiposOrdenados[i].getNombre() , 
 		    		equiposOrdenados[i].getGolesAFavor());
 		}
